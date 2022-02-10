@@ -1,5 +1,5 @@
 # -- docker registry
-registry: local
+registry: quay.io
 
 # -- The image pull policy
 imagePullPolicy: Always

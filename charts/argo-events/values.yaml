@@ -1,8 +1,8 @@
 # -- docker registry
-# registry: quay.io
+registry: quay.io
 
 # -- The image pull policy
-imagePullPolicy: Always
+imagePullPolicy: IfNotPresent
 
 # -- Secrets with credentials to pull images from a private registry
 imagePullSecrets: []

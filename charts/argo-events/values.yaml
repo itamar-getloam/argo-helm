@@ -47,7 +47,7 @@ sensorController:
   # -- Sensor controller name
   name: sensor-controller
   # -- Repository to use for the sensor controller
-  image: argoproj/argo-events
+  image: test/argo-events
   # -- Overrides the image tag
   # @default -- `""` (default is the chart appVersion)
   tag: ""

@@ -2,7 +2,7 @@
 registry: quay.io
 
 # -- The image pull policy
-imagePullPolicy: IfNotPresent
+imagePullPolicy: Never
 
 # -- Secrets with credentials to pull images from a private registry
 imagePullSecrets: []

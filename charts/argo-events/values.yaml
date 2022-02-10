@@ -47,7 +47,7 @@ sensorController:
   # -- Sensor controller name
   name: sensor-controller
   # -- Repository to use for the sensor controller
-  image: test/argo-events
+  image: argoproj/argo-events
   # -- Overrides the image tag
   # @default -- `""` (default is the chart appVersion)
   tag: "1.5.8"
@@ -84,7 +84,7 @@ eventsourceController:
   image: argoproj/argo-events
   # -- Overrides the image tag
   # @default -- `""` (default is the chart appVersion)
-  tag: ""
+  tag: "v1.5.8"
   # -- The number of event source controller pods to run
   replicaCount: 1
   # -- Additional environment variables to pass to event source controller

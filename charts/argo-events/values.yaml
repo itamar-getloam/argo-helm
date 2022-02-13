@@ -2,7 +2,7 @@
 registry: hub.docker.com
 
 # -- The image pull policy
-imagePullPolicy: IfNotExists
+imagePullPolicy: IfNotPresent
 
 # -- Secrets with credentials to pull images from a private registry
 imagePullSecrets: []

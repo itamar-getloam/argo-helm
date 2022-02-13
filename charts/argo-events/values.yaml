@@ -1,8 +1,8 @@
 # -- docker registry
-registry: quay.io
+registry: hub.docker.com
 
 # -- The image pull policy
-imagePullPolicy: Never
+imagePullPolicy: IfNotExists
 
 # -- Secrets with credentials to pull images from a private registry
 imagePullSecrets: []
@@ -47,10 +47,10 @@ sensorController:
   # -- Sensor controller name
   name: sensor-controller
   # -- Repository to use for the sensor controller
-  image: argoproj/argo-events
+  image: itamargetloam/argoevents
   # -- Overrides the image tag
   # @default -- `""` (default is the chart appVersion)
-  tag: "1.5.8"
+  tag: "latest"
   # -- The number of sensor controller pods to run
   replicaCount: 1
   # -- Additional environment variables to pass to sensor controller
@@ -59,7 +59,7 @@ sensorController:
     #   value: "true"
 
   # -- Repository to use for the sensor image
-  sensorImage: argoproj/argo-events
+  sensorImage: itamargetloam/argoevents
   # -- Annotations to be added to sensor controller pods
   podAnnotations: {}
   # -- [Node selector]
@@ -81,10 +81,10 @@ eventsourceController:
   # -- Event source controller name
   name: eventsource-controller
   # -- Repository to use for the event source controller
-  image: argoproj/argo-events
+  image: itamargetloam/argoevents
   # -- Overrides the image tag
   # @default -- `""` (default is the chart appVersion)
-  tag: "v1.5.8"
+  tag: "latest"
   # -- The number of event source controller pods to run
   replicaCount: 1
   # -- Additional environment variables to pass to event source controller
@@ -93,7 +93,7 @@ eventsourceController:
     #   value: "true"
 
   # -- Repository to use for the event source image
-  eventsourceImage: argoproj/argo-events
+  eventsourceImage: itamargetloam/argoevents
   # -- Annotations to be added to event source controller pods
   podAnnotations: {}
   # -- [Node selector]
@@ -115,10 +115,10 @@ eventbusController:
   # -- Event bus controller name
   name: eventbus-controller
   # -- Repository to use for the event bus controller
-  image: argoproj/argo-events
+  image: itamargetloam/argoevents
   # -- Overrides the image tag
   # @default -- `""` (default is the chart appVersion)
-  tag: ""
+  tag: "latest"
   # -- The number of event bus controller pods to run
   replicaCount: 1
   # -- Additional environment variables to pass to event bus controller

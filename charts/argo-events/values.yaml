@@ -1,5 +1,5 @@
 # -- docker registry
-registry: hub.docker.com
+registry: docker.io
 
 # -- The image pull policy
 imagePullPolicy: IfNotPresent
